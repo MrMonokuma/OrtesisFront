@@ -19,7 +19,7 @@ function registrarUsuario(obj){
             response=JSON.parse(rta);
             if(response.tipo==="OK"){
                 alert("Mensaje: "+response.mensaje)
-                $(location).attr('href','/FruverHouse/index.html')
+                $(location).attr('href','/OrtesisFront/login.html')
             }
             else{
                 alert("Error: "+response.mensaje)
@@ -42,7 +42,7 @@ function loginUsuario(obj){
             response=JSON.parse(rta);
             if(response.tipo==="OK"){
                 alert("Mensaje: "+response.mensaje)
-                $(location).attr('href','/OrtesisFront/index.html')
+                $(location).attr('href','/OrtesisFront/register.html')
             }
             else{
                 alert("Error: "+response.mensaje)
@@ -64,7 +64,7 @@ function registrarAdmin(obj){
             response=JSON.parse(rta);
             if(response.tipo==="OK"){
                 alert("Mensaje: "+response.mensaje)
-                $(location).attr('href','/OrtesisFront/index.html')
+                $(location).attr('href','/OrtesisFront/login.html')
             }
             else{
                 alert("Error: "+response.mensaje)

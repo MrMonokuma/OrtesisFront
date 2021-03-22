@@ -24,11 +24,11 @@ $("#btnRegistrar").click(function(e){
                     var obj={
                         documento: documento,
                         n: nombre,
-                        email: email,
-                        contra: password,
-                        telefono: telefono,
                         direccion: direccion,
-                        sexo: sexo
+                        email: email,
+                        sexo: sexo,
+                        contra: password,
+                        telefono: telefono
                     };
                     registrarUsuario(obj);
                 }
