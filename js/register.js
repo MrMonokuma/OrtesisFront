@@ -10,6 +10,7 @@ $("#btnRegistrar").click(function(e){
     var direccion=$("#direccion").val();
     var check=$("#check1").prop("checked");
     var sexo=$("#sexo").val();
+    var rol="rol";
     if (validarEmail(email)){
         if(email!==emailc){
             alert("Los correos no coinciden");
@@ -28,6 +29,7 @@ $("#btnRegistrar").click(function(e){
                         email: email,
                         sexo: sexo,
                         contra: password,
+                        rol: rol,
                         telefono: telefono
                     };
                     registrarUsuario(obj);
